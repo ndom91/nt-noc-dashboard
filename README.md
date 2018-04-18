@@ -2,19 +2,27 @@
 
 ![Screenshot](https://i.imgur.com/IKkvUxq.png)
 
-### Features
+## How-To
+- Download / clone the repo to your local machine 
+- Copy this dir to your web server root (i.e. `/var/www/html/ntdashboard`)
+- - Alternatively, you can use python (`python -m http.server 8080`) or php (`php -S localhost:8080`) to launch a temporary lightweight web server if you have the dev packages of those languages installed!
+- Navigate to your site! (i.e. `http://server-ip-or-domain.xyz/ntdashboard`)
+
+
+## Features
 - Totally customizable [Netdata](https://github.com/firehol/netdata) charts / graphs
 - Live stream of security cameras
 - Newsticker style display of camera feeds
--- Therefore enabling more than just 3 feeds you'd be able to show in a fixed 3x3 layout
+- - Therefore enabling more than just 3 feeds you'd be able to show in a fixed 3x3 layout
 
-### To Do
+## To Do
 - Finalize Netdata data points
+- Organize files better
 
-### Credit
+## Credit
 - Dashboard Framework: [AdminLTE](https://github.com/almasaeed2010/AdminLTE)
 - Data Collection: [Netdata](https://github.com/firehol/netdata)
 - Love: [ndom91](https://iamnico.xyz)
 
-## Licence
+### Licence
 `NT NOC Dashboard` is an open source project by [ndom91](https://iamnico.xyz) that is licensed under [MIT](http://opensource.org/licenses/MIT). `NT NOC Dashboard` reserves the right to change the license of future releases. Wondering what you can or can't do? View the [license guide](https://adminlte.io/docs/license).
