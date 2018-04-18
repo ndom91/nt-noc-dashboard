@@ -1,0 +1,16 @@
+body {
+    background: #084c61;
+    font-family: Roboto Mono;
+}
+#headerr {
+    text-align: center;
+    font-family: Roboto Mono;
+}
+img.img_badge {
+    opacity: 0.6;
+}
+ul, li {
+    font-family: Roboto Mono;
+    font-size: 20px;
+    color:#6dcc14;
+}
