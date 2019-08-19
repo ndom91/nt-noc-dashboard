@@ -1,0 +1,27 @@
+/*
+*
+* Firefox userChrome.css file for hiding scroll bar and "Loading Data" label 
+*
+* userChrome.css belongs in the active userprofile directory in firefox.
+* on windows this is at: C:\Users\[username]\AppData\Roaming\Mozilla\Firefox\Profiles\05or70aw.default\chrome
+* on linux it is at ~/.mozilla/firefox/chrome/
+*
+*/ 
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
+
+:-moz-any(#content,#appcontent) browser {
+ 
+	margin-right:-18px!important;
+ 
+	overflow-y:scroll;
+ 
+	margin-bottom:-18px!important;
+ 
+	overflow-x:scroll;
+
+}
+
+#statuspanel[type="overLink"] #statuspanel-label,
+#statuspanel[type="status"] {display:none !important;}
+

@@ -9,10 +9,118 @@
  * Core: General Layout Style
  * -------------------------
  */
+ 
+ 
+ /* scrollbar hacks */
+ 
+ ::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+html {overflow: -moz-scrollbars-none;}
+
+@-moz-document url-prefix() {
+    html,body{overflow: hidden !important;}
+}
+
+/* end scrollbar hacks */
+
+/* Pure CSS Ticker */
+
+* {
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.ticker-wrap {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0);
+  /* padding-left: 100%; */
+  box-sizing: content-box;
+}
+.ticker-wrap .ticker {
+  display: inline-block;
+  height: 4rem;
+  line-height: 4rem;
+  white-space: nowrap;
+  /* padding-right: 100%; */
+  box-sizing: content-box;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 150s;
+  animation-duration: 150s;
+}
+.ticker-wrap .ticker__item {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 2rem;
+  color: white;
+}
+
+/* End Pure CSS Ticker */
+
 html,
 body {
   height: 100%;
-  overflow-y: -moz-hidden-unscrollable;
+  overflow:scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.tickerlabels {
+  margin-left: 45%; 
+  width:425px;
+  font-family: monospace;
+  font-size: 13px;
+  color: #67B236 !important;
+  font-weight: bold;
+}
+
+.sectionheaders {
+  color:  #67B236;
+  text-align: center;
+ }
+
+::-webkit-scrollbar {
+    display: none; 
+    width: 0px; 
+    background: transparent; 
+}
+
+.box-body img {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	display: block !important;
 }
 
 @-moz-document url-prefix() {
