@@ -1,6 +1,6 @@
 # NOC Dashboard [Newtelco GmbH]
 
-![Screenshot](https://git.newtelco.dev/ndomino/noc_dashboard/raw/master/assets/img/NOC_Screenshot.png)
+![Screenshot](https://imgur.com/8tRgSTX.png)
 
 ## How-To
 - Clone the repo to your local machine    
