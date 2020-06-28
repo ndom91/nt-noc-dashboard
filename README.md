@@ -8,7 +8,7 @@ This dashboard page is displayed in a fullscreen browser in the technical office
 - Clone the repo to your local machine    
 `git clone https://github.com/ndom91/nt-noc-dashboard`  
 - Copy this directory to your web server root (i.e. `/var/www/html/ntdashboard`) and setup a virtualhost in your webserver of choice. Make sure you have php installed and set the index file to `index.php`.
-  - Alternatively, you can use python (`python -m http.server 8080`) or php (`php -S localhost:8080`) to launch a temporary lightweight web server if you have the dev packages of those languages installed!
+  - Alternatively, you can use php (`php -S localhost:8080`) to launch a temporary lightweight web server if you have the dev packages of those languages installed!
 
 ## 🎥 Features
 - Customizable [Netdata](https://github.com/firehol/netdata) charts  
