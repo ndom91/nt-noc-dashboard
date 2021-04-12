@@ -1,5 +1,9 @@
 # NOC Dashboard 🖥️
 
+> \***DEPRECATED**\*  
+> This is the original implementation, written mostly in PHP.   
+> It has been replaced by a Preact/Snowpack Javascript variant ([newtelco/nt-noc](https://github.com/newtelco/nt-noc))
+
 <img align="right" height="128px" src="https://imgur.com/qnv09T8.png">
 
 This dashboard page is displayed in a fullscreen browser in the technical office in order to keep our Network Engineers and IT colleagues always up to date with the latest critical information. 
